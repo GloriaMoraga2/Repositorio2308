@@ -12,21 +12,80 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="color: black"
+            style="font-family: cursive"
+            >Gloria Moraga</a
+          >
+          <button
+            style="color: black"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#about"
+                style="color: black"
+                >Sobre Mi</a
+              >
+              <a class="nav-link" href="#" style="color: black"
+                >Mis Proyectos</a
+              >
+              <a class="nav-link" href="#" style="color: black">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="heroContenido">
+          <figure class="avatar"></figure>
+          <div>
+            <h1 class="roboto-slab-bold titulo">Gloria Moraga</h1>
+            <h2 class="poppins-semibold subtitulo">
+              Diseñadora UX / Analista QA
+            </h2>
+          </div>
+        </div>
+      </div>
+    </header>
     <section id="about">
-      <header>
-        <h1>Gloria Moraga</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum autem
-          quo velit nam quasi repellat minima nobis sit alias dolorem nisi quod
-          praesentium ducimus, odit iusto! Quas nobis cupiditate voluptate?
-        </p>
-      </header>
+      <h2>Sobre mi</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+        quaerat quae. Beatae, corrupti et quia est omnis fugit? Earum molestias
+        laudantium ipsam tempora perferendis illo recusandae quo, quod sunt
+        quibusdam. Ullam, assumenda eos! Aliquam amet dolore animi obcaecati
+        consequuntur sunt neque maxime inventore corporis quis saepe beatae
+        fugit magni provident, deleniti ratione modi repellat atque similique
+        accusantium numquam tenetur quos.
+      </p>
     </section>
 
-    <section id="proyects">
+    <section id="proyects1">
       <h2>Proyectos</h2>
       <div class="row row-cols-1 row-cols-1 md-3 g-4">
         <div class="col">
@@ -41,7 +100,7 @@
       </div>
     </section>
 
-    <section id="proyects">
+    <section id="proyects2">
       <h2>Proyectos</h2>
       <div class="row row-cols-1 row-cols-1 md-3 g-4">
         <div class="col">
@@ -58,7 +117,41 @@
 
     <section id="contact">
       <h2>contactame</h2>
-      <form action=""></form>
+      <form action="">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label"
+            >Nombre Completo</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Nombre completo"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label"
+            >Correo Electrónico</label
+          >
+          <input
+            type="text-area"
+            class="form-control"
+            id="formGroupExampleInput2"
+            placeholder="Correo Electrónico"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Mensaje</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            placeholder="Ingresa tu mensaje"
+            rows="3"
+          ></textarea>
+        </div>
+      </form>
     </section>
 
     <script
